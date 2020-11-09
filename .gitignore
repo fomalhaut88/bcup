@@ -1,0 +1,9 @@
+*~
+*.pyc
+__pycache__
+
+/.venv/
+/build/
+/dist/
+
+/config.yml

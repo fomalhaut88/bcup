@@ -1,0 +1,5 @@
+altgraph==0.17
+psutil==5.7.3
+pyinstaller==4.0
+pyinstaller-hooks-contrib==2020.10
+PyYAML==5.3.1

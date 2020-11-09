@@ -1,0 +1,7 @@
+sed -i 's,WorkingDirectory=.,WorkingDirectory='"$HOME"',g' /etc/systemd/system/bcup.service
+
+systemctl daemon-reload
+systemctl enable bcup
+systemctl stop bcup
+systemctl start bcup
+systemctl status bcup

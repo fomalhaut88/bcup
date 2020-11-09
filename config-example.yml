@@ -1,0 +1,8 @@
+format: Ymd.HMS.f
+sources:
+  - source: /home/alexander/TestFolder
+    target: /home/alexander/TestBcup
+    period: 10  # in seconds
+    method: full  # last|full|diff
+    compress: true
+    limit: 3  # null or integer

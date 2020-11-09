@@ -1,0 +1,17 @@
+[Unit]
+Description=bcup
+After=multi-user.target
+
+[Service]
+Type=simple
+PIDFile=/tmp/bcup.pid
+ExecStart=/usr/bin/bcup
+Restart=always
+WorkingDirectory=.
+Environment="CONFIG_PATH=/etc/bcup/config.yml"
+Environment="LOG_LEVEL=INFO"
+StandardOutput=append:/var/log/bcup/info.log
+StandardError=append:/var/log/bcup/error.log
+
+[Install]
+WantedBy=multi-user.target
