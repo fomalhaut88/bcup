@@ -1,6 +1,6 @@
 # bcup
 
-A service for Linux to make backups. The configuration is stored in `config.yml` where you can specify the source and target folders and
+A service for Linux to make backups. Its configuration is stored in `config.yml` where you can specify the source and target folders and
 some other customizations. The goals of the solution are the simplicity to configure and several ways to backup that include data compression and
 efficient storing all versions of the files.
 
@@ -33,7 +33,7 @@ At the moment there are 3 ways to backup. The parameter is named **method**.
 
 1. **full** - it copies the source if it changed and keeps the stored files before.
 2. **last** - same as **full** but keeps the last copy only.
-3. **diff** - it stores only the files that have been changed, added or removed (differences), 
+3. **diff** - it stores only the files that have been changed, added or removed, 
 so the space on the disk is used efficiently keeping the change history of each file.
 
 Parameter **source** is the path to the directory that is to backup.
