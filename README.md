@@ -62,6 +62,7 @@ Step 1. Download the source code from here:
 
 ```
 git clone https://github.com/fomalhaut88/bcup.git --depth 1
+cd bcup
 ```
 
 Step 2. Build:
