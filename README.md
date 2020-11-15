@@ -88,4 +88,6 @@ Step 5: Restart the service when you made the changes in the config file:
 sudo service bcup restart
 ```
 
+## Logging
+
 The logs are available in `/var/log/bcup/error.log`.
