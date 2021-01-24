@@ -9,7 +9,6 @@ according to given method (full, last, diff).
 """
 import re
 import os
-import tarfile
 from datetime import datetime
 
 from . import utils, diff

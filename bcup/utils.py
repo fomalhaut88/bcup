@@ -13,6 +13,8 @@ def copy_file(src, dst, dst_fs=None):
     Copies file or symlink from 'src' to 'dst'.
     """
     if dst_fs is None or dst_fs.is_path_allowed(dst):
+        if os.path.islink(dst):
+            os.unlink(dst)
         shutil.copy2(src, dst, follow_symlinks=False)
 
 
