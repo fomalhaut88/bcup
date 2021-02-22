@@ -25,7 +25,7 @@ def create_backup_from_source(source):
         backup_cls = type('MethodLastBackup',
                           (PlainCopyMixin, LastExtraMixin, BaseBackup), {})
     elif source.method == 'diff':
-        backup_cls = type('MethodLastBackup',
+        backup_cls = type('MethodDiffBackup',
                           (DiffCopyMixin, FullExtraMixin, BaseBackup), {})
     else:
         raise ValueError(source.method)
