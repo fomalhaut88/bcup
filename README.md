@@ -1,4 +1,4 @@
-# bcup
+# bcup 1.1
 
 A service for Linux to make backups. Its configuration is stored in `config.yml` where you can specify the source and target folders and
 some other customizations. The goals of the solution are the simplicity to configure and several ways to backup that include data compression and
@@ -74,7 +74,7 @@ Step 2. Build:
 Step 3. Install from the built deb-file:
 
 ```
-sudo dpkg -i dist/bcup-1.0.deb
+sudo dpkg -i dist/bcup-1.1.deb
 ```
 
 Step 4. Configure your backups:
